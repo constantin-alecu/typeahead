@@ -15,7 +15,7 @@ public class MAin {
 	}
 	
 	private static String nextSessionIdQ() {
-		return new String( (new BigInteger(130, random).toString(32)).charAt(3) +"");
+		return new String( (new BigInteger(130, random).toString(32)).charAt(RandomMethod.getRandomInt()) +"");
 	}
 
 	public static void main(String[] args) {
