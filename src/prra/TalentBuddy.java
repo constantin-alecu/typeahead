@@ -12,7 +12,7 @@ class MyClass {
         String min = "ZZZZZZZZZZZZZZZZZZZZZZZ";
         for(String qu : queries){
             test = false;
-            min = "ZZ";
+            min = "zzzzz";
             for(String name : usernames){
                 
                 if(name.toLowerCase().startsWith(qu.toLowerCase())){
