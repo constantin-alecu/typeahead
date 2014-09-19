@@ -1,7 +1,11 @@
 package prra;
 
 import java.util.Random;
-
+/**
+ * 
+ * @author alexandru.alecu
+ *
+ */
 public class RandomMethod {
 
 	public static int getRandomInt() {

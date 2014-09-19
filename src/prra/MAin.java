@@ -5,7 +5,11 @@ import java.security.SecureRandom;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
-
+/**
+ * 
+ * @author alexandru.alecu
+ *
+ */
 public class MAin {
 
 	private static SecureRandom random = new SecureRandom();
