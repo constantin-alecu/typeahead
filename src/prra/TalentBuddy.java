@@ -4,6 +4,8 @@ package prra;
  * @author alexandru.alecu
  *
  */
+
+
 class MyClass {
 
     public static void typeahead(String[] usernames, String[] queries) {
