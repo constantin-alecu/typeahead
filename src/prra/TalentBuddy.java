@@ -11,9 +11,10 @@ class MyClass {
         for(String qu : queries){
             test = false;
             min = "zzzzz" ;
+            String queriesToLower = qu.toLowerCase();
             for(String name : usernames){
-                
-                if(name.toLowerCase().startsWith(qu.toLowerCase())){
+                String nameToLower = name.toLowerCase();
+                if(nameToLower.toLowerCase().startsWith(queriesToLower)){
                     if(min.compareToIgnoreCase(name)>=0)
                         min=name;
                    //System.out.println(name);
