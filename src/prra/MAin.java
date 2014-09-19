@@ -14,25 +14,16 @@ public class MAin {
 
 	private static SecureRandom random = new SecureRandom();
 
-	private static String nextSessionId() {
+	public static String nextSessionId() {
 		return new BigInteger(130, random).toString(32);
 	}
 	
-	private static String nextSessionIdQ() {
+	public static String nextSessionIdQ() {
 		return new String( (new BigInteger(130, random).toString(32)).charAt(RandomMethod.getRandomInt()) +"");
 	}
 
-	public static void main(String[] args) {
-		String[] usernames = new String[100];
-		String[] queries = new String[10];
+	public static void typeahead(String[] usernames , String[] queries) {
 		
-		for (int i = 0; i < queries.length; i++) {
-			queries[i] = nextSessionIdQ();
-		}
-		
-		for (int i = 0; i < usernames.length; i++) {
-			usernames[i] = nextSessionId();
-		}
 
 		NavigableSet<String> company = new TreeSet<String>();
 		for (int i = 0; i < usernames.length; i++) {
